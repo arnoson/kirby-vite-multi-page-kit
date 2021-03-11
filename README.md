@@ -1,6 +1,10 @@
 # Kirby Vite Multi-Page Kit
 
-This starter kit uses the [kirby-vite](https://github.com/arnoson/kirby-vite) plugin and provides a simple multi page setup. Each template can have it's own js and css files.
+## Features
+
+- ⚡️ Uses [Vite](https://vitejs.dev/) with [kirby-vite](https://github.com/arnoson/kirby-vite) plugin
+- 📚 Multiple pages
+- 🔄 Live Reloading for Kirby templates, snippets, content, ... changes
 
 ## Installation
 
