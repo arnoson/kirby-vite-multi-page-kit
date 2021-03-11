@@ -12,9 +12,9 @@ $entry = "templates/$template/index.js";
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kirby Vite Multi-Page</title>
   <?= vite()->client() ?>
-  <!-- Include the shared css. -->
+  <!-- Include the shared css ... -->
   <?= vite()->css() ?>
-  <!-- And the template's css -->
+  <!-- ... and the template's css -->
   <?= vite()->css($entry) ?>
 </head>
 <body>
