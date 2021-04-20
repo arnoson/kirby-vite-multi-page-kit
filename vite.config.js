@@ -3,11 +3,16 @@ import { resolve } from 'path'
 import fs from 'fs'
 
 const root = 'src'
-const templates = fs.readdirSync(`${root}/templates`)
+const templateDir = resolve(__dirname, `${root}/templates`)
+const templates = fs
+  .readdirSync(templateDir)
+  .filter(file => !(/^\./).test(file))
+  .filter(file => fs.statSync(`${templateDir}/${file}`).isDirectory())
+
 const input = Object.fromEntries([
   ...templates.map(template => [
     template,
-    resolve(__dirname, `${root}/templates/${template}/index.js`)
+   `${templateDir}/${template}/index.js`
   ]),
   ['shared', resolve(__dirname, `${root}/index.js`)] 
 ])
