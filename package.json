@@ -6,7 +6,8 @@
     "vite": "vite",
     "dev": "shx touch src/.lock && concurrently \"npm:server\" \"npm:vite\"",
     "server": "php -S localhost:8888 -t public server.php",
-    "build": "shx rm -f src/.lock && vite build"
+    "build": "shx rm -f src/.lock && vite build",
+    "preview": "npm run build && npm run server"
   },
   "author": "arnoson",
   "license": "MIT",
