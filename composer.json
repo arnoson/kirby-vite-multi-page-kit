@@ -1,10 +1,10 @@
 {
-    "name": "arnoson/kirby-vite-multi-page-kit",
-    "description": "A multi-page Kirby CMS + Vite starter kit",
-    "type": "project",
-    "license": "MIT",
-    "require": {
-        "getkirby/cms": "3.5.3.1",
-        "arnoson/kirby-vite": "^2.1"
-    }
+  "name": "arnoson/kirby-vite-multi-page-kit",
+  "description": "A multi-page Kirby CMS + Vite starter kit",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "getkirby/cms": "^3.6",
+    "arnoson/kirby-vite": "^2.5.1"
+  }
 }
