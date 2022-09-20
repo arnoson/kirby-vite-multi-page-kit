@@ -7,7 +7,7 @@ node_modules/
 /public/dist/
 
 # Kirby
-.lock
+.dev
 kirby
 vendor
 

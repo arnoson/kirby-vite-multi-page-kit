@@ -5,6 +5,11 @@
   "license": "MIT",
   "require": {
     "getkirby/cms": "^3.6",
-    "arnoson/kirby-vite": "^2.5.1"
+    "arnoson/kirby-vite": "^3.0.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "getkirby/composer-installer": true
+    }
   }
 }
