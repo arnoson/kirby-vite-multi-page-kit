@@ -7,8 +7,8 @@ const templates = readdirSync("src/templates")
   .filter((name) => existsSync(`src/templates/${name}/index.js`));
 
 const input = Object.fromEntries([
-  ...templates.map((name) => [name, `src/templates/${name}/index.js`]),
-  ["shared", resolve(__dirname, `${root}/index.js`)],
+  ...templates.map((name) => [name, `templates/${name}/index.js`]),
+  ["shared", "src/index.js"],
 ]);
 
 export default ({ mode }) => ({
