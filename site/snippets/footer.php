@@ -1,9 +1,9 @@
-<?php
-/** @var Kirby\Cms\Page $page */
-$template = $page->template();
-$entry = "templates/$template/index.js";
-?>
+<?php $entry = "templates/" . $page->template() . "/index.js"; ?>
 
-<?= vite()->js($entry) ?>
+<!-- Include the shared js ... -->
+<?= vite()->js() ?>
+<!-- ... and the template's js (if it exists) -->
+<?php e(isset(vite()->manifest()[$entry]), vite()->js($entry)) ?>
 </body>
+
 </html>
