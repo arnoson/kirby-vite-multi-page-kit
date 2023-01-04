@@ -19,6 +19,11 @@ composer install
 npm install
 ```
 
+## Versioning
+
+Because this is a started kit and not a library it doesn't use semantic versioning.
+If you wan't to migrate an existing project please look for any breaking changes in the release note.
+
 ## Development
 
 Start vite's dev server and a simple php dev server by running:
