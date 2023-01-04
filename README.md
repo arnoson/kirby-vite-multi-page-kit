@@ -19,11 +19,6 @@ composer install
 npm install
 ```
 
-## Versioning
-
-Because this is a started kit and not a library it doesn't use semantic versioning.
-If you wan't to migrate an existing project please look for any breaking changes in the release note.
-
 ## Development
 
 Start vite's dev server and a simple php dev server by running:
@@ -63,3 +58,8 @@ If you have ssh access you can use rsync to automate the upload/sync.
 ### Git
 
 You can also deploy your repository with git. Then you have to run the [installation](#installation) steps again on your web server.
+
+## Versioning
+
+Because this is a started kit and not a library it doesn't use semantic versioning.
+If you wan't to migrate an existing project please look for any breaking changes in the release note.
