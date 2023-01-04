@@ -1,3 +1,3 @@
-<?php snippet('header'); ?>
+<?php snippet('header', ['entry' => 'contact']); ?>
 <h1><?= $page->title() ?></h1>
-<?php snippet('footer'); ?>
+<?php snippet('footer', ['entry' => 'contact']); ?>

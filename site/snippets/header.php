@@ -1,4 +1,4 @@
-<?php $entry = "templates/" . $page->template() . "/index.js"; ?>
+<?php $entryFile = isset($entry) ? "templates/$entry/index.js" : null ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +11,7 @@
   <!-- Include the shared css ... -->
   <?= vite()->css() ?>
   <!-- ... and the template's css (if it exists) -->
-  <?php e(isset(vite()->manifest()[$entry]), vite()->css($entry)) ?>
+  <?php e($entryFile, vite()->css($entryFile)) ?>
 </head>
 
 <body>
