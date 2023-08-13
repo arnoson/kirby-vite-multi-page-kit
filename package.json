@@ -13,7 +13,8 @@
   "license": "MIT",
   "devDependencies": {
     "concurrently": "^7.0.1",
+    "glob": "^10.3.3",
     "vite": "^3.0.0 || ^4.0.0",
-    "vite-plugin-kirby": "^0.1.0"
+    "vite-plugin-kirby": "^4.0.3"
   }
 }
