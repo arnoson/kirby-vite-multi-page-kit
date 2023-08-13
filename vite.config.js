@@ -1,15 +1,12 @@
+import { globSync } from "glob";
 import { resolve } from "path";
-import { readdirSync, existsSync } from "fs";
 import kirby from "vite-plugin-kirby";
 
-const templates = readdirSync("src/templates")
-  .filter((name) => !/^\./.test(name))
-  .filter((name) => existsSync(`src/templates/${name}/index.js`));
-
-const input = Object.fromEntries([
-  ...templates.map((name) => [name, `src/templates/${name}/index.js`]),
-  ["shared", "src/index.js"],
-]);
+const input = [
+  'src/index.js',
+  'src/index.css',
+  ...globSync("src/templates/*/index.{js,css}")
+].map((path) => resolve(process.cwd(), path))
 
 export default ({ mode }) => ({
   root: "src",
