@@ -3,6 +3,7 @@ import { resolve } from "path";
 import kirby from "vite-plugin-kirby";
 import removeConsole from "vite-plugin-remove-console";
 import ViteRestart from 'vite-plugin-restart'
+import progress from 'vite-plugin-progress'
 
 const input = [
   'src/index.js',
@@ -26,6 +27,7 @@ export default ({ mode }) => ({
 
   plugins: [
     kirby(),
+    progress(),
     removeConsole(),
     ViteRestart({
       restart: [
