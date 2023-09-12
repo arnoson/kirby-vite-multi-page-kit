@@ -3,7 +3,7 @@ import { resolve } from "path";
 import kirby from "vite-plugin-kirby";
 import timeReporter from 'vite-plugin-time-reporter';
 import removeConsole from "vite-plugin-remove-console";
-
+import ViteRestart from 'vite-plugin-restart'
 
 const input = [
   'src/index.js',
@@ -25,5 +25,14 @@ export default ({ mode }) => ({
     rollupOptions: { input },
   },
 
-  plugins: [kirby(), timeReporter(), removeConsole()],
+  plugins: [
+    kirby(),
+    timeReporter(),
+    removeConsole(),
+    ViteRestart({
+      restart: [
+        'my.config.js',
+      ]
+    })
+  ],
 });
