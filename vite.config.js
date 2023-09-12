@@ -1,7 +1,6 @@
 import { globSync } from "glob";
 import { resolve } from "path";
 import kirby from "vite-plugin-kirby";
-import timeReporter from 'vite-plugin-time-reporter';
 import removeConsole from "vite-plugin-remove-console";
 import ViteRestart from 'vite-plugin-restart'
 
@@ -27,7 +26,6 @@ export default ({ mode }) => ({
 
   plugins: [
     kirby(),
-    timeReporter(),
     removeConsole(),
     ViteRestart({
       restart: [
