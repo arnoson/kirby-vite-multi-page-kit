@@ -2,6 +2,8 @@ import { globSync } from "glob";
 import { resolve } from "path";
 import kirby from "vite-plugin-kirby";
 import timeReporter from 'vite-plugin-time-reporter';
+import removeConsole from "vite-plugin-remove-console";
+
 
 const input = [
   'src/index.js',
@@ -23,5 +25,5 @@ export default ({ mode }) => ({
     rollupOptions: { input },
   },
 
-  plugins: [kirby(), timeReporter()],
+  plugins: [kirby(), timeReporter(), removeConsole()],
 });
