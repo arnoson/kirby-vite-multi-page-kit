@@ -5,11 +5,9 @@ import removeConsole from "vite-plugin-remove-console";
 import ViteRestart from 'vite-plugin-restart'
 import progress from 'vite-plugin-progress'
 
-const input = [
-  'src/index.js',
-  'src/index.css',
-  ...globSync("src/templates/*/index.{js,css}")
-].map((path) => resolve(process.cwd(), path))
+const input = ["src/index.js", ...globSync("src/templates/*/index.js")].map(
+  (path) => resolve(process.cwd(), path)
+);
 
 export default ({ mode }) => ({
   root: "src",
