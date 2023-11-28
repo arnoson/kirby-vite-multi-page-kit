@@ -12,9 +12,9 @@
   "author": "arnoson",
   "license": "MIT",
   "devDependencies": {
-    "concurrently": "^7.0.1",
+    "concurrently": "^8.0.0",
     "glob": "^10.3.3",
-    "vite": "^3.0.0 || ^4.0.0",
-    "vite-plugin-kirby": "^4.0.3"
+    "vite": "^5.0.0",
+    "vite-plugin-kirby": "^5.0.0"
   }
 }
