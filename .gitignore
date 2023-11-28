@@ -2,6 +2,7 @@
 /.env
 node_modules/
 .vscode
+/site/config/vite.config.php
 
 # Frontend
 /public/assets/
