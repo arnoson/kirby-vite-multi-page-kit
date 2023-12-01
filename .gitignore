@@ -3,6 +3,8 @@
 node_modules/
 .vscode
 /site/config/vite.config.php
+package-lock.json
+composer.lock
 
 # Frontend
 /public/assets/
