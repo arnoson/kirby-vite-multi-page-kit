@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "vite": "vite",
-    "dev": "concurrently \"npm:server\" \"npm:vite\"",
+    "dev": "concurrently \"npm:server\" \"npm:vite\" -c yellow,green",
     "server": "php -S localhost:8888 -t public ./kirby/router.php",
     "build": "vite build",
     "preview": "npm run build && npm run server"
