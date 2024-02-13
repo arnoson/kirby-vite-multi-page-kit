@@ -45,6 +45,20 @@ Build your optimized frontend assets to `public/dist`:
 npm run build
 ```
 
+## File Nesting
+
+If your are using VS Code, you can add file nesting to visually organize your assets in the editor's file explorer:
+
+```json
+// .vscode/settings.json
+{
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.js": "${capture}.css"
+  },
+}
+```
+
 ## Deployment
 
 ### Manually

@@ -2,9 +2,10 @@ import { globSync } from "glob";
 import { resolve } from "path";
 import kirby from "vite-plugin-kirby";
 
-const input = ["src/index.js", ...globSync("src/templates/*/index.js")].map(
-  (path) => resolve(process.cwd(), path)
-);
+const input = [
+  "src/index.{js,css}",
+  ...globSync("src/templates/*.{js,css}"),
+].map((path) => resolve(process.cwd(), path));
 
 export default ({ mode }) => ({
   root: "src",
