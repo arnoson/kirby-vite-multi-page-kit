@@ -1,8 +1,8 @@
-import { globSync } from "glob";
 import { resolve } from "path";
+import { globSync } from 'node:fs'
 import kirby from "vite-plugin-kirby";
 
-const input = globSync(["src/index.{js,css}", "src/templates/*.{js,css}"]).map(
+const input= globSync(["src/index.{js,css}", "src/templates/*.{js,css}"]).map(
   (path) => resolve(process.cwd(), path)
 );
 
